@@ -1,0 +1,83 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+	width: 350px;
+	margin: auto;
+}
+
+.block-title {
+	margin-bottom: 5px;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0;
+}
+
+.inline-title {
+	display: inline-block;
+	color: #3f3f3f;
+	margin-top: 0;
+}
+
+.completed-title {
+	margin-top: 75px;
+}
+
+#taskInput {
+	width: 150px;
+}
+
+button {
+  background: none;
+  background-color: #eaecef;
+  border: 0px;
+  font-size: 13px;
+}
+
+button:hover {
+  color: gray;
+}
+
+
+li {
+	list-style: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.task {
+	width: 250px;
+	background-color: lightgray;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 2px 2px 2px 4px;
+	word-wrap: break-word;
+}
+
+/* taken from https://stackoverflow.com/questions/16791851/a-flash-of-color-using-pure-css-transitions */
+@-webkit-keyframes err {
+    0% {
+        background-color: #ff8c8c;
+        opacity:1;
+    }
+    22% {
+        background-color: #ff8c8c;
+    }
+    77% {
+        background-color: #ff8c8c;
+    }
+    100% {
+        background-color: #777;
+    }
+}
+
+.err {
+    -webkit-animation-name: err;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+}    
